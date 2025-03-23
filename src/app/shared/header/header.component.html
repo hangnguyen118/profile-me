@@ -1,0 +1,42 @@
+<mat-toolbar>
+    @if(isMobile){
+    <button mat-icon-button class="menuItem" (click)="onOpenDrawer()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <button [class.active]="activePage==='Home'" (click)="onNavClick('home')" mat-icon-button>
+        <img [src]="logoUrl" [alt]="logoAlt" width="32" height="32" />
+    </button>
+    } @else {
+    <button [class.active]="activePage==='Home'" (click)="onNavClick('home')" mat-icon-button>
+        <img [src]="logoUrl" [alt]="logoAlt" width="32" height="32" />
+    </button>
+    <button [class.active]="activePage==='Home'" (click)="onNavClick('home')" mat-button>
+        <span>Home</span>
+    </button>
+    <button [class.active]="activePage==='About'" (click)="onNavClick('about')" mat-button>
+        <span>About</span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu" class="menuItem">Dashboard</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [class.active]="activePage==='Product'" (click)="onNavClick('products')">
+            <span>Product</span>
+        </button>
+        <button mat-menu-item [class.active]="activePage==='About'" (click)="onNavClick('about')">
+            <span>About</span>
+        </button>
+    </mat-menu>
+    }
+    <span class="spacer"></span>
+    <button mat-icon-button class="nonfitications-icon">
+        <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-button [class.active]="activePage==='Login'" (click)="onNavClick('login')">
+        <span>Login</span>
+    </button>
+    <button mat-button [class.active]="activePage==='Register'" (click)="onNavClick('register')">
+        <span>Register</span>
+    </button>
+</mat-toolbar>
+@if(isLoading) {
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+}

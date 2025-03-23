@@ -1,0 +1,8 @@
+.spacer {
+    flex: 1 1 auto;
+}
+.active {
+    span {
+        color: #025cbc;
+    }
+}
