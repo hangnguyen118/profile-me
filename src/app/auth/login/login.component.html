@@ -1,0 +1,25 @@
+<div class="content">
+    <mat-card class="app-form" appearance="outlined">
+        <h1>Register Account</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="example@gmail.com" formControlName="email" autocomplete="email" />
+                @if(isInvalid(loginForm.controls['email'])){
+                <mat-error>{{getErrorMessage(loginForm.controls['email'])}}</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" autocomplete="new-password" />
+                @if(isInvalid(loginForm.controls['password'])){
+                <mat-error>{{getErrorMessage(loginForm.controls['password'])}}</mat-error>
+                }
+            </mat-form-field>
+            <div class="button-row">
+                <button type="submit" mat-flat-button [disabled]="loginForm.invalid">Continue</button>
+                <span>Already have an account?<a mat-button routerLink="/login">Sign in</a></span>
+            </div>
+        </form>
+    </mat-card>
+</div>

@@ -1,17 +1,17 @@
-<mat-drawer-container>
-  <mat-drawer mode="over" #drawer class="sidenav">
-    <button mat-raised-button (click)="drawer.close()" >
-      <span>Home</span>
-    </button>
-    <button mat-button (click)="drawer.close()" >
-      <span>About</span>
-    </button>
-    <button mat-button (click)="drawer.close()" >Dashboard</button>
-    <button mat-button (click)="drawer.close()" >Toggle</button>
-  </mat-drawer>
-  <div class="content">
-    <app-header (drawerOpen)="drawer.open()"></app-header>
-    <router-outlet />
-    <app-footer></app-footer>
-  </div>
-</mat-drawer-container>
+<main>  
+  <app-header (drawerOpen)="drawer.open()"></app-header>
+  <router-outlet />
+  <app-footer></app-footer>
+  <mat-drawer-container>
+    <mat-drawer mode="over" #drawer class="sidenav">
+      <button mat-raised-button (click)="drawer.close()">
+        <span>Home</span>
+      </button>
+      <button mat-button (click)="drawer.close()">
+        <span>About</span>
+      </button>
+      <button mat-button (click)="drawer.close()">Dashboard</button>
+      <button mat-button (click)="drawer.close()">Toggle</button>
+    </mat-drawer>
+  </mat-drawer-container>
+</main>

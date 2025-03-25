@@ -1,0 +1,43 @@
+<div class="content">
+    <mat-card class="app-form" appearance="outlined">
+        <h1>Register Account</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput class="input" placeholder="Enter your name" formControlName="name"
+                    autocomplete="username" />
+                @if(isInvalid(registerForm.controls['name'])){
+                <mat-error>{{getErrorMessage(registerForm.controls['name'])}}</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="example@gmail.com" formControlName="email" autocomplete="email" />
+                @if(isInvalid(registerForm.controls['email'])){
+                <mat-error>{{getErrorMessage(registerForm.controls['email'])}}</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" autocomplete="new-password" />
+                @if(isInvalid(registerForm.controls['password'])){
+                <mat-error>{{getErrorMessage(registerForm.controls['password'])}}</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password Confirm</mat-label>
+                <input type="password" matInput formControlName="confirmPassword" autocomplete="new-password" />
+                @if(isInvalid(registerForm.controls['confirmPassword']) || registerForm.hasError('passwordMismatch')){
+                <mat-error>{{getErrorMessage(registerForm.controls['confirmPassword'])}}</mat-error>
+                }
+                @if(registerForm.hasError('passwordMismatch') && registerForm.get('confirmPassword')?.dirty){
+                <mat-error>Passwords do not match!!!</mat-error>
+                }
+            </mat-form-field>
+            <div class="button-row">
+                <button type="submit" mat-flat-button [disabled]="registerForm.invalid">Continue</button>
+                <span>Already have an account?<a mat-button routerLink="/login">Sign in</a></span>
+            </div>
+        </form>
+    </mat-card>
+</div>
