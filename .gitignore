@@ -40,3 +40,55 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+###############
+#Backend file
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Rider and VS Code directories
+.idea/
+.vscode/
+
+# Dependencies
+packages/
+
+# Environment files
+.env
+
+# Debugging
+*.pdb
+*.mdb
+*.ilk
+*.tlog
+
+# Publish Output
+publish/
+
+# Resharper and other JetBrains tools
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Secrets
+secrets.json
+
+# Other
+Thumbs.db
+Desktop.ini
+appsettings.json
+appsettings.*.json
+program.cs
