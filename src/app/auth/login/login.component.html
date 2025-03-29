@@ -1,7 +1,7 @@
 <div class="content">
     <mat-card class="app-form" appearance="outlined">
-        <h1>Register Account</h1>
-        <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+        <h1>Sign In Account</h1>
+        <form (ngSubmit)="onLogin()" [formGroup]="loginForm">
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="example@gmail.com" formControlName="email" autocomplete="email" />
@@ -15,10 +15,13 @@
                 @if(isInvalid(loginForm.controls['password'])){
                 <mat-error>{{getErrorMessage(loginForm.controls['password'])}}</mat-error>
                 }
-            </mat-form-field>
+            </mat-form-field>           
             <div class="button-row">
                 <button type="submit" mat-flat-button [disabled]="loginForm.invalid">Continue</button>
-                <span>Already have an account?<a mat-button routerLink="/login">Sign in</a></span>
+                <span>Already have an account?<a mat-button routerLink="/register">Sign in</a></span>
+            </div>
+            <div class="button-row">
+                <a mat-button routerLink="/forgot-password">Forgotten your password?</a>
             </div>
         </form>
     </mat-card>

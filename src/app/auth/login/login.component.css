@@ -12,6 +12,7 @@
 .button-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 mat-form-field {
   width: 100%;
