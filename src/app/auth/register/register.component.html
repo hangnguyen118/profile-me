@@ -3,11 +3,11 @@
         <h1>Register Account</h1>
         <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
             <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
-                <input matInput class="input" placeholder="Enter your name" formControlName="name"
-                    autocomplete="username" />
-                @if(isInvalid(registerForm.controls['name'])){
-                <mat-error>{{getErrorMessage(registerForm.controls['name'])}}</mat-error>
+                <mat-label>Full Name</mat-label>
+                <input matInput class="input" placeholder="Enter your full name" formControlName="fullName"
+                    autocomplete="fullName" />
+                @if(isInvalid(registerForm.controls['fullName'])){
+                <mat-error>{{getErrorMessage(registerForm.controls['fullName'])}}</mat-error>
                 }
             </mat-form-field>
             <mat-form-field appearance="outline">
