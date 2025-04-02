@@ -51,7 +51,7 @@ namespace profile_me_backend.Controllers
           new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         };
       var token = GenerateToken(authClaims);
-      return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+      return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token), user });
     }
     private JwtSecurityToken GenerateToken(List<Claim> authClaims)
     {

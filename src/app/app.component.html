@@ -1,25 +1,23 @@
 <main>
   <mat-drawer-container>
-    <div class="content">
-      <app-header (drawerOpen)="drawer.open()"></app-header>
-      <router-outlet />
-      <app-footer></app-footer>
-    </div>
+    <app-header (drawerOpen)="drawer.open()"></app-header>
+    <router-outlet />
+    <app-footer></app-footer>
     <mat-drawer #drawer>
-      <mat-nav-list> 
+      <mat-nav-list>
         <a mat-list-item routerLink="/home" (click)="drawer.close()">
           <span matListItemTitle>Home</span>
-        </a>      
+        </a>
         <a mat-list-item routerLink="/login" (click)="drawer.close()">
           <span matListItemTitle>Login</span>
-        </a>      
+        </a>
         <a mat-list-item routerLink="/register" (click)="drawer.close()">
           <span matListItemTitle>Register</span>
         </a>
         <a mat-list-item (click)="drawer.close()">
           <span matListItemTitle>Close</span>
         </a>
-      </mat-nav-list> 
+      </mat-nav-list>
     </mat-drawer>
   </mat-drawer-container>
 </main>

@@ -13,18 +13,21 @@
     <button [class.active]="activePage==='Home'" (click)="onNavClick('home')" mat-button>
         <span>Home</span>
     </button>
-    <button [class.active]="activePage==='About'" (click)="onNavClick('about')" mat-button>
+    <a [class.active]="activePage==='About'" href="#about-section" mat-button>
         <span>About</span>
-    </button>
+    </a>
     <button mat-button [matMenuTriggerFor]="menu" class="menuItem">Dashboard</button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item [class.active]="activePage==='Product'" (click)="onNavClick('products')">
+        <a mat-menu-item [class.active]="activePage==='Product'" href="#products-section">
             <span>Product</span>
-        </button>
-        <button mat-menu-item [class.active]="activePage==='About'" (click)="onNavClick('about')">
+        </a>
+        <a mat-menu-item [class.active]="activePage==='About'" href="#about-section">
             <span>About</span>
-        </button>
+        </a>
     </mat-menu>
+    <a [class.active]="activePage==='Contacts'" href="#contact-section" mat-button>
+        <span>Contacts</span>
+    </a>
     }
     <span class="spacer"></span>
     <button mat-icon-button class="nonfitications-icon">

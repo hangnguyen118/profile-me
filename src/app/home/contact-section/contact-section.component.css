@@ -1,0 +1,25 @@
+mat-form-field {
+  width: 100%;
+}
+.contact-section {
+  margin-top: 4rem;
+}
+.contact-content {
+  display: flex;
+  gap: 1rem;
+}
+.contact-left {
+  width: 50%;
+}
+.contact-right {
+  width: 50%;
+  padding: 2.5rem;
+  background-color: white;
+}
+.group-icon {
+  display: flex;
+}
+.social-item {
+  width: 100%;
+  object-fit: contain;
+}
