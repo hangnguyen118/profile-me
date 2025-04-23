@@ -9,10 +9,11 @@ import { AboutSectionComponent } from "./about-section/about-section.component";
 import { SkillsSectionComponent } from "./skills-section/skills-section.component";
 import { ProjectsSectionComponent } from "./projects-section/projects-section.component";
 import { ContactSectionComponent } from "./contact-section/contact-section.component";
+import { ProjectDetailSectionComponent } from "./project-detail-section/project-detail-section.component";
 
 @Component({
   selector: 'app-home',
-  imports: [MatButtonModule, MatCardModule, MatDivider, HeroSectionComponent, AboutSectionComponent, SkillsSectionComponent, ProjectsSectionComponent, ContactSectionComponent],
+  imports: [MatButtonModule, MatCardModule, MatDivider, HeroSectionComponent, AboutSectionComponent, SkillsSectionComponent, ProjectsSectionComponent, ContactSectionComponent, ProjectDetailSectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

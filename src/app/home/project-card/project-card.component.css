@@ -1,0 +1,44 @@
+.project-card {
+  background-position: center;
+  background-size: cover;
+  width: 330px;
+  max-width: 350px;
+  height: 210px;
+  overflow: hidden;
+}
+.project-card:hover {
+  box-shadow: inset 0px -50px 40px -30px rgba(0, 0, 0, 0.6);
+  background-size: 110%;
+}
+.card-title {
+  margin-top: 8px;
+  width: 70%;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.card-badge {
+  background-color: rgb(20, 20, 20);
+  padding: 4px 10px 4px 10px;
+  border-radius: 20px;
+  color: rgb(229, 229, 229);
+  font-size: 13px;
+}
+.chip-group {
+  display: flex;
+  gap: 8px;
+}
+.card-chip {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background-color: rgb(101, 101, 101);
+  border-radius: 6px;
+}
+.card-chip-img {
+  width: 100%;
+  object-fit: cover;
+}

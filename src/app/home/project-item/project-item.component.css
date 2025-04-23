@@ -1,0 +1,11 @@
+.list-item {
+  border-radius: 8px;
+  padding: 8px;
+}
+.list-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}

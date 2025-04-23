@@ -1,4 +1,19 @@
 .main-content {
-  padding-left: 18em;
-  padding-right: 18rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media (min-width: 600px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
 }

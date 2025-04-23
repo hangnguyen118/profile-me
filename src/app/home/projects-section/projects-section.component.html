@@ -2,134 +2,15 @@
     <h2>My Recent Projects</h2>
     <div class="project-content">
         <div class="wrapper-left">
-            <div class="list-item">
-                <p><mat-icon aria-hidden="false" aria-label="Example school icon" fontIcon="add_2"></mat-icon>React
-                </p>
-            </div>
-            <div class="list-item">
-                <p><mat-icon aria-hidden="false" aria-label="Example school icon" fontIcon="add_2"></mat-icon>Angular
-                </p>
-            </div>
-            <div class="list-item">
-                <p><mat-icon aria-hidden="false" aria-label="Example school icon" fontIcon="add_2"></mat-icon>.Net
-                </p>
-            </div>
-            <div class="list-item">
-                <p><mat-icon aria-hidden="false" aria-label="Example school icon" fontIcon="add_2"></mat-icon>Node.js
-                </p>
-            </div>
+            @for (project of projects; track project.id) {
+            <app-project-item [project]="project" (selected)="onSelectedProject($event)"></app-project-item>
+            }
         </div>
         <div class="wrapper-right">
-            <div class="wrapper-right-header">
-                <button mat-stroked-button class="button-item">JavaScript</button>
-                <button mat-stroked-button class="button-item">Typescript</button>
-                <button mat-stroked-button class="button-item">C#</button>
-                <button mat-stroked-button class="button-item">.Net</button>
-            </div>
-            <div class="wrapper-right-content">
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-                <mat-card class="project-card">
-                    <mat-card-content>
-                        <span class="card-badge">2025</span>
-                        <mat-card-title class="card-title">Ticket Management Website</mat-card-title>
-                        <div class="chip-group">
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                            <div class="card-chip">
-                                <img src="/icons/react-icon.png" alt="icon" class="card-chip-img">
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-            </div>
+            @for (project of projects; track project.id) {
+            <app-project-card [project]="project"></app-project-card>
+            }
         </div>
+
     </div>
 </div>

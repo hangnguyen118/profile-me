@@ -1,15 +1,15 @@
 <div class="hero">
     <div class="hero-image">
-        <img mat-card-avatar src="/assets/hero.jpg" alt="Photo profile" class="avatar">
+        <img mat-card-avatar src="/assets/avatar.jpg" alt="Photo profile" class="avatar">
     </div>
-    <h2>I'm Hang, fullstack web developer.
-        <br>
-        Code your dreams and let it lead you to endless possibilities
-    </h2>
-    <p>I craft seamless, user-friendly websites that inspire creativity and innovation, <br> transforming ideas into
-        interactive, beautiful digital experiences.</p>
+    <h2 style="white-space: pre-line;">{{title}}</h2>
+    <p style="white-space: pre-line;">{{descriptions}}</p>
     <div class="button-group">
-        <button mat-flat-button filled-disabled-label-text-color>View Portfolio</button>
-        <button mat-stroked-button>Contact Me</button>
+        <a mat-flat-button href="#projects-section">
+            <span>View Projects</span>
+        </a>
+        <a mat-stroked-button href="#contact-section">
+            <span>Contact Me</span>
+        </a>
     </div>
 </div>
