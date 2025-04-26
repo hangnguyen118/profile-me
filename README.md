@@ -9,14 +9,14 @@ Profile-Me is a personal website built with Angular, allowing visitors to learn 
 - **Contact:** Provides an easy way for users to get in touch with me via email.
 - **Responsive:** The website is optimized for both desktop and mobile devices.
 
-![image](https://github.com/user-attachments/assets/f10702f8-372e-45f1-88f6-68ae0a3daf87)
-![image](https://github.com/user-attachments/assets/b1826cf1-070a-4c98-bb50-9ce4c00d1c19)
-
 ## Technologies Used
 
 - **Frontend:** Angular
 - **Deployment:** Vercel
 - **Backend (Email contact):** Uses EmailJS to send emails from the website without a backend server.
+
+![image](https://github.com/user-attachments/assets/f10702f8-372e-45f1-88f6-68ae0a3daf87)
+![image](https://github.com/user-attachments/assets/b1826cf1-070a-4c98-bb50-9ce4c00d1c19)
 
 ## Installation and Running the App
 
