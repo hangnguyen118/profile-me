@@ -55,13 +55,9 @@ To deploy to Vercel, follow these steps:
 
 ### Contact
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
-- GitHub: [Your GitHub](https://github.com/your-username)
-
-## License
-
-Released under the MIT License. See [LICENSE](LICENSE) for more details.
+- Email: [hangnguyen118.wy@gmail.com](mailto:hangnguyen118.wy@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/hangnguyen118](https://www.linkedin.com/in/hangnguyen118/)
+- GitHub: [https://github.com/hangnguyen118](https://github.com/hangnguyen118)
 
 ---
 
