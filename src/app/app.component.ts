@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { MatDrawer, MatDrawerContainer } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListItem, MatNavList } from '@angular/material/list';

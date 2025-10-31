@@ -1,0 +1,12 @@
+.card-chip {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 6px;
+  }
+  .card-chip-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  

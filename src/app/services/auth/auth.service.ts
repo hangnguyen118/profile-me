@@ -2,8 +2,8 @@ import { inject, Injectable } from '@angular/core';
 import { APP_SETTINGS } from '../../app.settings';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
-import { LoginModel } from '../../types/login-model';
-import { RegisterModel } from '../../types/register-model';
+import { LoginModel } from '../../types/models/login-model';
+import { RegisterModel } from '../../types/models/register-model';
 
 @Injectable({
   providedIn: 'root'
