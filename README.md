@@ -1,59 +1,60 @@
-# Profileme
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+# Profile-Me
 
-## Development server
+Profile-Me is a personal website built with Angular, allowing visitors to learn about me, download my CV, and contact me via email.
 
-To start a local development server, run:
+## Key Features
 
-```bash
-ng serve
-```
+- **About Me:** The homepage introduces myself, my educational journey, work experience, and skills.
+- **Download CV:** Users can download my CV in PDF format.
+- **Contact:** Provides an easy way for users to get in touch with me via email.
+- **Responsive:** The website is optimized for both desktop and mobile devices.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- **Frontend:** Angular
+- **Deployment:** Vercel
+- **Backend (Email contact):** Uses EmailJS to send emails from the website without a backend server.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![image](https://github.com/user-attachments/assets/f10702f8-372e-45f1-88f6-68ae0a3daf87)
+![image](https://github.com/user-attachments/assets/b1826cf1-070a-4c98-bb50-9ce4c00d1c19)
 
-```bash
-ng generate component component-name
-```
+## Installation and Running the App
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Requirements
 
-```bash
-ng generate --help
-```
+- Node.js (version 14.x or higher)
+- Angular CLI
 
-## Building
+### Installation
 
-To build the project run:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/profile-me.git
+   cd profile-me
+   ```
 
-```bash
-ng build
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3. **Run the app**
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+   Visit `http://localhost:4200` in your browser to view the app.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Deploy to Vercel
 
-```bash
-ng test
-```
+To deploy to Vercel, follow these steps:
 
-## Running end-to-end tests
+1. Log in to [Vercel](https://vercel.com) and create a new project.
+2. Select your GitHub repository, and Vercel will automatically deploy your app.
 
-For end-to-end (e2e) testing, run:
+### Contact
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Email: [hangnguyen118.wy@gmail.com](mailto:hangnguyen118.wy@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/hangnguyen118](https://www.linkedin.com/in/hangnguyen118/)
+- GitHub: [https://github.com/hangnguyen118](https://github.com/hangnguyen118)
